@@ -1,0 +1,53 @@
+body {
+    background:#f0f4f8;
+    font-family:Segoe UI, sans-serif;
+}
+
+.remote {
+    width:320px;
+    margin:50px auto;
+    background:#1e293b;
+    padding:20px;
+    border-radius:12px;
+    color:white;
+}
+
+.screen {
+    background:black;
+    padding:12px;
+    border-radius:8px;
+    margin-bottom:15px;
+    text-align:center;
+}
+
+.controls, .num-pad, .favorites {
+    display:grid;
+    gap:8px;
+    margin-bottom:10px;
+}
+
+.controls {
+    grid-template-columns:repeat(3,1fr);
+}
+
+.num-pad {
+    grid-template-columns:repeat(3,1fr);
+}
+
+.favorites {
+    grid-template-columns:repeat(3,1fr);
+}
+
+button {
+    height:40px;
+    border:none;
+    border-radius:6px;
+    background:#334155;
+    color:white;
+    cursor:pointer;
+    font-size:14px;
+}
+
+button:active {
+    background:#475569;
+}

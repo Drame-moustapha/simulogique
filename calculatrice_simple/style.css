@@ -1,0 +1,44 @@
+body {
+    background:#f1f5f9;
+    font-family:Segoe UI;
+}
+
+.calculator {
+    width:400px;
+    margin:50px auto;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 10px 30px rgba(0,0,0,0.1);
+}
+
+.operation-display {
+    font-size:18px;
+    color:#475569;
+    text-align:right;
+    margin-bottom:10px;
+    min-height:25px;
+}
+
+.seven-seg-display {
+    display:flex;
+    justify-content:flex-end;
+    gap:10px;
+    margin-bottom:30px;
+}
+
+.keypad {
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:15px;
+}
+
+.key {
+    height:60px;
+    font-size:18px;
+    background:#334155;
+    color:white;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+}

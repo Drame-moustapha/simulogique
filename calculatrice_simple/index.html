@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Simulogique - Calculatrice</title>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="calculator">
+
+  <!-- AFFICHAGE OPERATION -->
+  <div class="operation-display" id="operation">
+    0
+  </div>
+
+  <!-- AFFICHEUR 7 SEGMENTS SERIE -->
+  <div class="seven-seg-display" id="display">
+    <!-- Les digits seront générés dynamiquement -->
+  </div>
+
+  <!-- CLAVIER 4x4 -->
+  <div class="keypad">
+
+    <button class="key">7</button>
+    <button class="key">8</button>
+    <button class="key">9</button>
+    <button class="key op">÷</button>
+
+    <button class="key">4</button>
+    <button class="key">5</button>
+    <button class="key">6</button>
+    <button class="key op">×</button>
+
+    <button class="key">1</button>
+    <button class="key">2</button>
+    <button class="key">3</button>
+    <button class="key op">−</button>
+
+    <button class="key">0</button>
+    <button class="key">C</button>
+    <button class="key">=</button>
+    <button class="key op">+</button>
+
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
