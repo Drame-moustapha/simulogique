@@ -1,0 +1,106 @@
+body {
+    background:#eee;
+    font-family:Arial;
+}
+
+.container {
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:40px;
+}
+
+/* AFFICHEUR BOITIER */
+.display-box {
+    background:white;
+    padding:20px;
+    border-radius:8px;
+    box-shadow:0 4px 12px rgba(0,0,0,0.2);
+}
+
+.display {
+    position:relative;
+    width:120px;
+    height:200px;
+    background:#111;
+    border-radius:6px;
+}
+
+/* SEGMENTS */
+.segment {
+    position:absolute;
+    background:#333;
+    transition:0.5s;
+}
+
+.segment.on {
+    background:#ddd;
+}
+
+/* Placement segments */
+.a { top:10px; left:30px; width:60px; height:10px; }
+.b { top:20px; right:10px; width:10px; height:60px; }
+.c { bottom:20px; right:10px; width:10px; height:60px; }
+.d { bottom:10px; left:30px; width:60px; height:10px; }
+.e { bottom:20px; left:10px; width:10px; height:60px; }
+.f { top:20px; left:10px; width:10px; height:60px; }
+.g { top:95px; left:30px; width:60px; height:10px; }
+
+/* Voyant lumineux */
+.dot {
+    position:absolute;
+    bottom:3px;
+    right:5px;
+    width:12px;
+    height:12px;
+    border-radius:50%;
+    background:#333;
+}
+
+.dot.on {
+    background:lime;
+}
+
+/* CLAVIER */
+.keypad {
+    display:grid;
+    grid-template-columns:repeat(3,60px);
+    gap:15px;
+    background:#222;
+    padding:20px;
+    border-radius:10px;
+}
+
+.key{
+    height:50px;
+    font-size:18px;
+    background:#333;
+    color:white;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+#power {
+    height:60px;
+    width: 133px;
+    font-size:18px;
+    background: #333;
+    color: lime;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.key:active, #power:active {
+    background:#666;
+}
+
+#speed-control {
+    margin-top:15px;
+    color:white;
+    text-align:center;
+}
+
+#speed {
+    width:200px;
+}

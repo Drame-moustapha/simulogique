@@ -1,0 +1,169 @@
+/* =====================================================
+   1. VARIABLES PEDAGOGIQUES
+===================================================== */
+
+:root {
+    --bg-page: #f4f6f9;
+    --bg-panel: #ffffff;
+    --bg-display: #0f172a;
+    --bg-segment-off: #1e293b;
+    --bg-segment-on: #e2e8f0;
+    --bg-keypad: #1e293b;
+    --bg-button: #334155;
+    --bg-button-hover: #475569;
+    --bg-button-active: #64748b;
+
+    --color-title: #0f172a;
+    --color-text: #334155;
+    --color-power: #22c55e;
+
+    --radius: 12px;
+}
+
+/* =====================================================
+   2. STRUCTURE GENERALE
+===================================================== */
+
+body {
+    margin: 0;
+    background: var(--bg-page);
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: var(--color-text);
+}
+
+.container {
+    max-width: 900px;
+    margin: 60px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+}
+
+/* =====================================================
+   3. TITRE PEDAGOGIQUE
+===================================================== */
+
+h1 {
+    margin: 0;
+    font-size: 28px;
+    font-weight: 600;
+    color: var(--color-title);
+}
+
+/* =====================================================
+   4. PANNEAU AFFICHEUR
+===================================================== */
+
+.display-box {
+    background: var(--bg-panel);
+    padding: 30px;
+    border-radius: var(--radius);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.display {
+    position: relative;
+    width: 140px;
+    height: 230px;
+    background: var(--bg-display);
+    border-radius: 10px;
+}
+
+/* ---------------- SEGMENTS ---------------- */
+
+.segment {
+    position: absolute;
+    background: var(--bg-segment-off);
+    transition: background 0.25s ease;
+}
+
+.segment.on {
+    background: var(--bg-segment-on);
+}
+
+/* Placement segments */
+
+.a { top:12px; left:35px; width:70px; height:12px; }
+.b { top:25px; right:12px; width:12px; height:70px; }
+.c { bottom:25px; right:12px; width:12px; height:70px; }
+.d { bottom:12px; left:35px; width:70px; height:12px; }
+.e { bottom:25px; left:12px; width:12px; height:70px; }
+.f { top:25px; left:12px; width:12px; height:70px; }
+.g { top:110px; left:35px; width:70px; height:12px; }
+
+/* ---------------- VOYANT POWER ---------------- */
+
+.dot {
+    position: absolute;
+    bottom: 8px;
+    right: 10px;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--bg-segment-off);
+}
+
+.dot.on {
+    background: var(--color-power);
+}
+
+/* =====================================================
+   5. PANNEAU COMMANDES
+===================================================== */
+
+.keypad {
+    background: var(--bg-keypad);
+    padding: 30px;
+    border-radius: var(--radius);
+    display: grid;
+    grid-template-columns: repeat(3, 80px);
+    gap: 18px;
+    justify-content: center;
+}
+
+/* ---------------- BOUTONS NUMERIQUES ---------------- */
+
+.key {
+    height: 60px;
+    font-size: 18px;
+    font-weight: 500;
+    background: var(--bg-button);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.key:hover {
+    background: var(--bg-button-hover);
+}
+
+.key:active {
+    background: var(--bg-button-active);
+    transform: scale(0.95);
+}
+
+/* ---------------- BOUTON POWER ---------------- */
+
+#power {
+    grid-column: span 3;
+    height: 65px;
+    font-size: 18px;
+    font-weight: 600;
+    background: #0f172a;
+    color: var(--color-power);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#power:active {
+    transform: scale(0.95);
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulogique - Afficheur 7 Segments Hybride</title>
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <script src="jquery-3.6.0.min.js"></script>
+     <link rel="stylesheet" href="style.css">
+ </head>
+ <body>
+
+ <div class="container">
+
+     <!-- AFFICHEUR -->
+    <div class="display-box">
+        <div class="display">
+            <div id="fa" class="segment a"></div>
+            <div id="fb" class="segment b"></div>
+            <div id="fc" class="segment c"></div>
+            <div id="fd" class="segment d"></div>
+            <div id="fe" class="segment e"></div>
+            <div id="ff" class="segment f"></div>
+            <div id="fg" class="segment g"></div>
+            <div id="fh" class="dot"></div>
+        </div>
+    </div>
+
+    <!-- CONTROLES -->
+    <div class="keypad">
+
+        <!-- Mode -->
+        <button id="mode">MODE: SIMPLE</button>
+
+        <!-- Clavier -->
+        <div id="keyboard">
+            <button class="key" data-val="0">0</button>
+            <button class="key" data-val="1">1</button>
+            <button class="key" data-val="2">2</button>
+            <button class="key" data-val="3">3</button>
+            <button class="key" data-val="4">4</button>
+            <button class="key" data-val="5">5</button>
+            <button class="key" data-val="6">6</button>
+            <button class="key" data-val="7">7</button>
+            <button class="key" data-val="8">8</button>
+            <button class="key" data-val="9">9</button>
+        </div>
+
+        <!-- Power -->
+        <button id="power">0</button>
+
+    </div>
+
+    <!-- VITESSE -->
+    <div id="speed-control">
+        <label>Vitesse : <span id="speed-value">1000</span> ms</label>
+        <input type="range" id="speed" min="200" max="2000" step="100" value="1000">
+    </div>
+
+</div>
+
+<script src="app-hybride.js"></script>
+</body>
+</html>
