@@ -83,7 +83,7 @@ h1 {
 }
 
 .segment.on {
-    background: var(--bg-segment-on);
+    background: lime; /* ou #00FF00 */
 }
 
 /* Placement segments */

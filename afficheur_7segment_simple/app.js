@@ -1,9 +1,9 @@
 class Display7Segments {
     constructor() {
-        this.power = 0; // alimentation
+        this.power = false; // false = OFF, true = ON
         this.value = null;
 
-        // Table des segments pour 0–7
+        // Table des segments pour 0–9
         this.decoder = {
             0: [1,1,1,1,1,1,0],
             1: [0,1,1,0,0,0,0],
@@ -19,7 +19,7 @@ class Display7Segments {
     }
 
     togglePower() {
-        this.power = this.power ? 0 : 1;
+        this.power = !this.power; // true/false
         if (!this.power) this.value = null;
         this.updateDisplay();
     }
@@ -33,12 +33,12 @@ class Display7Segments {
 
     getSegments() {
         if (!this.power || this.value === null) {
-            return {fa:0, fb:0, fc:0, fd:0, fe:0, ff:0, fg:0, fh:this.power};
+            return {fa:0, fb:0, fc:0, fd:0, fe:0, ff:0, fg:0, fh:this.power ? 1 : 0};
         }
         const seg = this.decoder[this.value];
         return {
             fa:seg[0], fb:seg[1], fc:seg[2], fd:seg[3],
-            fe:seg[4], ff:seg[5], fg:seg[6], fh:this.power
+            fe:seg[4], ff:seg[5], fg:seg[6], fh:this.power ? 1 : 0
         };
     }
 
@@ -48,7 +48,7 @@ class Display7Segments {
             if(segments[id]) $("#"+id).addClass("on");
             else $("#"+id).removeClass("on");
         });
-        $("#power").text(this.power);
+        $("#power").text(this.power ? "ON" : "OFF");
     }
 }
 
@@ -60,7 +60,7 @@ $(document).ready(()=>{
     // Bouton ON/OFF
     $("#power").click(()=> display.togglePower());
 
-    // Boutons 0–7
+    // Boutons 0–9
     $(".key").click((e)=>{
         const val = parseInt($(e.target).data("val"));
         display.setValue(val);

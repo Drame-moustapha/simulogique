@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Simulogique - Panneau</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="panel">
+
+    <h3>Gestion des Joueurs</h3>
+
+    <input type="text" id="playerName" placeholder="Nom joueur">
+    <button id="addPlayer">Ajouter</button>
+
+    <button id="nextPlayer">Joueur Suivant</button>
+
+    <div class="display">
+        <p>Joueur actuel : <span id="current">Aucun</span></p>
+        <p>File d'attente :</p>
+        <ul id="queueList"></ul>
+    </div>
+
+</div>
+<script src="app.js"></script>
+</body>
+</html>
