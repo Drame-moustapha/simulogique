@@ -7,7 +7,7 @@
     --bg-panel: #ffffff;
     --bg-display: #0f172a;
     --bg-segment-off: #1e293b;
-    --bg-segment-on: #e2e8f0;
+    --bg-segment-on: #00ff00;
     --bg-keypad: #1e293b;
     --bg-button: #334155;
     --bg-button-hover: #475569;
@@ -40,10 +40,6 @@ body {
     align-items: center;
 }
 
-/* =====================================================
-   3. TITRE PEDAGOGIQUE
-===================================================== */
-
 h1 {
     margin: 0;
     font-size: 28px;
@@ -52,7 +48,7 @@ h1 {
 }
 
 /* =====================================================
-   4. PANNEAU AFFICHEUR
+   3. PANNEAU AFFICHEUR 14 SEGMENTS
 ===================================================== */
 
 .display-box {
@@ -60,60 +56,53 @@ h1 {
     padding: 30px;
     border-radius: var(--radius);
     box-shadow: 0 8px 25px rgba(0,0,0,0.08);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
 }
 
-.display {
+.display-14 {
     position: relative;
-    width: 140px;
-    height: 230px;
+    width: 160px;
+    height: 280px;
     background: var(--bg-display);
     border-radius: 10px;
 }
 
-/* ---------------- SEGMENTS ---------------- */
+/* ============= SEGMENTS 14 ============= */
 
 .segment {
     position: absolute;
     background: var(--bg-segment-off);
-    transition: background 0.25s ease;
+    transition: background 0.2s ease;
 }
 
 .segment.on {
-    background: lime; /* ou #00FF00 */
+    background: var(--bg-segment-on);
+    box-shadow: 0 0 10px var(--bg-segment-on);
 }
 
-/* Placement segments */
+/* Segments horizontaux */
+.seg-a { top:15px;    left:35px;  width:90px;   height:14px; }  /* haut */
+.seg-g { top:130px;   left:35px;  width:90px;   height:14px; }  /* milieu */
+.seg-d { bottom:15px; left:35px;  width:90px;   height:14px; }  /* bas */
 
-.a { top:12px; left:35px; width:70px; height:12px; }
-.b { top:25px; right:12px; width:12px; height:70px; }
-.c { bottom:25px; right:12px; width:12px; height:70px; }
-.d { bottom:12px; left:35px; width:70px; height:12px; }
-.e { bottom:25px; left:12px; width:12px; height:70px; }
-.f { top:25px; left:12px; width:12px; height:70px; }
-.g { top:110px; left:35px; width:70px; height:12px; }
+/* Segments verticaux supérieurs gauche/droit */
+.seg-f { top:30px;    left:15px;  width:14px;   height:100px; } /* haut gauche */
+.seg-b { top:30px;    right:15px; width:14px;   height:100px; } /* haut droit */
 
-/* ---------------- VOYANT POWER ---------------- */
+/* Segments verticaux inférieurs gauche/droit */
+.seg-e { top:145px;   left:15px;  width:14px;   height:100px; } /* bas gauche */
+.seg-c { top:145px;   right:15px; width:14px;   height:100px; } /* bas droit */
 
-.dot {
-    position: absolute;
-    bottom: 8px;
-    right: 10px;
-    width: 14px;
-    height: 14px;
-    border-radius: 50%;
-    background: var(--bg-segment-off);
-}
-
-.dot.on {
-    background: var(--color-power);
-}
+/* Segments diagonaux/additionnels */
+.seg-h { top:130px;   right:35px; width:14px;   height:14px; }  /* milieu droit */
+.seg-i { top:30px;    left:55px;  width:14px;   height:100px; } /* gauche haut interne */
+.seg-j { top:30px;    right:55px; width:14px;   height:100px; } /* droit haut interne */
+.seg-k { top:145px;   left:55px;  width:14px;   height:100px; } /* gauche bas interne */
+.seg-l { bottom:15px; right:55px; width:14px;   height:14px; }  /* bas droit interne */
+.seg-m { top:15px;    right:35px; width:14px;   height:14px; }  /* haut droit interne */
+.seg-n { bottom:15px; left:55px;  width:14px;   height:14px; }  /* bas gauche interne */
 
 /* =====================================================
-   5. PANNEAU COMMANDES
+   4. PANNEAU COMMANDES
 ===================================================== */
 
 .keypad {
@@ -121,38 +110,11 @@ h1 {
     padding: 30px;
     border-radius: var(--radius);
     display: grid;
-    grid-template-columns: repeat(3, 80px);
+    grid-template-columns: 1fr 1fr;
     gap: 18px;
-    justify-content: center;
 }
-
-/* ---------------- BOUTONS NUMERIQUES ---------------- */
-
-.key {
-    height: 60px;
-    font-size: 18px;
-    font-weight: 500;
-    background: var(--bg-button);
-    color: white;
-    border: none;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: all 0.2s ease;
-}
-
-.key:hover {
-    background: var(--bg-button-hover);
-}
-
-.key:active {
-    background: var(--bg-button-active);
-    transform: scale(0.95);
-}
-
-/* ---------------- BOUTON POWER ---------------- */
 
 #power {
-    grid-column: span 3;
     height: 65px;
     font-size: 18px;
     font-weight: 600;
@@ -164,6 +126,35 @@ h1 {
     transition: all 0.2s ease;
 }
 
+#power:hover {
+    box-shadow: 0 0 15px rgba(34, 197, 94, 0.3);
+}
+
 #power:active {
     transform: scale(0.95);
+}
+
+#case-toggle {
+    height: 65px;
+    font-size: 16px;
+    font-weight: 600;
+    background: #334155;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#case-toggle:hover {
+    background: #475569;
+}
+
+#case-toggle:active {
+    transform: scale(0.95);
+}
+
+#current-char {
+    text-align: center;
+    color: var(--color-title);
 }

@@ -5,20 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8e33ad39-8631-4a94-b58d-0f91d18268e3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/navbar.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/panneau/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/panneau/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/panneau/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afficheur_7segment_serie/app-serie.js" beforeDir="false" afterPath="$PROJECT_DIR$/afficheur_7segment_serie/app-serie.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/afficheur_7segment_serie/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/afficheur_7segment_serie/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/afficheur_7segment_serie/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/afficheur_7segment_serie/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/afficheur_7segment_simple/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/afficheur_7segment_simple/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/afficheur_7segment_simple/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/afficheur_7segment_simple/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/afficheur_7segment_simple/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/afficheur_7segment_simple/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,6 +93,7 @@
       <workItem from="1772261031326" duration="7362000" />
       <workItem from="1772554461468" duration="5527000" />
       <workItem from="1773140957409" duration="2799000" />
+      <workItem from="1774514472713" duration="2158000" />
     </task>
     <servers />
   </component>
