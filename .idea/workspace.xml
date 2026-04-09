@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8e33ad39-8631-4a94-b58d-0f91d18268e3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/afficheur_alpha_numerique/.idea/afficheur_7segment_serie.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/afficheur_alpha_numerique/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/afficheur_alpha_numerique_serie/app-serie.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/afficheur_alpha_numerique_serie/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/afficheur_alpha_numerique_serie/jquery-3.6.0.min.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/afficheur_alpha_numerique_serie/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afficheur_7segment_serie/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/afficheur_alpha_numerique/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afficheur_7segment_serie/.idea/afficheur_7segment_serie.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/afficheur_7segment_serie/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/afficheur_alpha_numerique/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afficheur_7segment_serie/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/afficheur_alpha_numerique/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afficheur_7segment_serie/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/afficheur_alpha_numerique/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afficheur_7segment_serie/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/afficheur_7segment_serie/app-serie.js" beforeDir="false" afterPath="$PROJECT_DIR$/afficheur_alpha_numerique/app-serie.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afficheur_7segment_serie/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/afficheur_alpha_numerique/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afficheur_7segment_serie/jquery-3.6.0.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/afficheur_alpha_numerique/jquery-3.6.0.min.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/afficheur_7segment_serie/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/afficheur_alpha_numerique/style.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="3AFe1Gy3wc594VcgHSlduALJUJ5" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.simulateur.executor": "Run",
+    "DefaultHtmlFileTemplate": "HTML File",
+    "JavaScript Debug.Debug Application.executor": "Run",
+    "JavaScript Debug.index.html.executor": "Run",
+    "JavaScript Debug.index_hybride.html.executor": "Run",
+    "Node.js.app.js.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "jdk.selected.JAVA_MODULE": "17",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/HP/Desktop/Stage proposé par Mr Sambe/simulateur -1/afficheur_alpha_numerique_serie",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_interpreter_path": "node",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\HP\Desktop\Stage proposé par Mr Sambe\simulateur -1\afficheur_alpha_numerique_serie" />
+      <recent name="C:\Users\HP\Desktop\Stage proposé par Mr Sambe\simulateur -1" />
+      <recent name="C:\Users\HP\Desktop\Stage proposé par Mr Sambe\simulateur\panneau" />
+      <recent name="C:\Users\HP\Desktop\Stage proposé par Mr Sambe\simulateur\afficheur_7segment_simple" />
+      <recent name="C:\Users\HP\Desktop\Stage proposé par Mr Sambe\simulateur\afficheur_7segment_serie" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8e33ad39-8631-4a94-b58d-0f91d18268e3" name="Changes" comment="" />
+      <created>1772192533600</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1772192533600</updated>
+      <workItem from="1772192534875" duration="118000" />
+      <workItem from="1772192746414" duration="1971000" />
+      <workItem from="1772195347111" duration="3097000" />
+      <workItem from="1772261031326" duration="7362000" />
+      <workItem from="1772554461468" duration="5527000" />
+      <workItem from="1773140957409" duration="2799000" />
+      <workItem from="1774514472713" duration="3914000" />
+      <workItem from="1774921113921" duration="146000" />
+      <workItem from="1774921299597" duration="1757000" />
+      <workItem from="1775031392605" duration="14000" />
+      <workItem from="1775031443912" duration="80000" />
+      <workItem from="1775031561992" duration="757000" />
+      <workItem from="1775182378673" duration="843000" />
+      <workItem from="1775201556112" duration="4190000" />
+      <workItem from="1775701026642" duration="4638000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

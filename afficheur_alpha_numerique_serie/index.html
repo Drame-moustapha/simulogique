@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Afficheur Série Complet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <!-- Clavier -->
+    <div class="row" id="keyboard"></div>
+    <div>
+        <br>
+    </div>
+    <!-- Afficheurs -->
+    <div class="screens">
+
+        <!-- 7 segments -->
+        <div class="display-7seg">
+            <div id="a" class="segment"></div>
+            <div id="b" class="segment vertical"></div>
+            <div id="c" class="segment vertical"></div>
+            <div id="d" class="segment"></div>
+            <div id="e" class="segment vertical"></div>
+            <div id="f" class="segment vertical"></div>
+            <div id="g" class="segment"></div>
+        </div>
+
+        <!-- matrice 5x5 -->
+        <div id="matrix" class="matrix"></div>
+
+        <!-- LCD 16x2 -->
+        <div class="lcd">
+            <div id="lcd-line1"></div>
+            <div id="lcd-line2"></div>
+        </div>
+    </div>
+
+</div>
+
+<script src="jquery-3.6.0.min.js"></script>
+<script src="app-serie.js"></script>
+</body>
+</html>
