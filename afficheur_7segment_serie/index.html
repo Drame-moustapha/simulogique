@@ -2,67 +2,42 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Simulogique - Afficheur 14 Segments Série</title>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <title>Clavier + Afficheurs</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <div class="container">
-    <h1>Afficheur 14 Segments - Série</h1>
 
-    <!-- AFFICHEUR -->
-    <table>
-        <tr>
-            <td>
-                <!-- CONTROLE -->
-                <div class="keypad">
-                    <button id="power" class="key-power">0</button>
-                    <button id="case-toggle" class="key-case">min</button>
-                </div>
-            </td>
-            <td>
-                <div style="padding: 0 20px; text-align: center;">
-                    <p id="current-char" style="font-size: 28px; font-weight: bold; margin: 10px 0;">0</p>
-                </div>
-            </td>
-            <td>
-                <div class="display-box">
-                    <div class="display-14">
-                        <!-- Segments supérieurs -->
-                        <div id="fa" class="segment seg-a"></div>
-                        <div id="fm" class="segment seg-m"></div>
+    <!-- ===== AFFICHEURS ===== -->
+    <div class="screens">
+        <!-- ===== CLAVIER ===== -->
+        <div id="keyboard"></div>
+        <!-- 7 segments -->
+        <div class="display-7seg">
+            <div id="a" class="segment"></div>
+            <div id="b" class="segment vertical"></div>
+            <div id="c" class="segment vertical"></div>
+            <div id="d" class="segment"></div>
+            <div id="e" class="segment vertical"></div>
+            <div id="f" class="segment vertical"></div>
+            <div id="g" class="segment"></div>
+        </div>
 
-                        <!-- Segment supérieur gauche -->
-                        <div id="ff" class="segment seg-f"></div>
-                        <div id="fi" class="segment seg-i"></div>
+        <!-- Matrice -->
+        <div id="matrix" class="matrix"></div>
 
-                        <!-- Segment supérieur droit -->
-                        <div id="fb" class="segment seg-b"></div>
-                        <div id="fj" class="segment seg-j"></div>
+        <!-- LCD -->
+        <div id="lcd" class="lcd"></div>
 
-                        <!-- Segment milieu -->
-                        <div id="fg" class="segment seg-g"></div>
-                        <div id="fh" class="segment seg-h"></div>
+    </div>
 
-                        <!-- Segment inférieur gauche -->
-                        <div id="fe" class="segment seg-e"></div>
-                        <div id="fk" class="segment seg-k"></div>
 
-                        <!-- Segment inférieur droit -->
-                        <div id="fc" class="segment seg-c"></div>
-                        <div id="fn" class="segment seg-n"></div>
 
-                        <!-- Segments inférieurs -->
-                        <div id="fd" class="segment seg-d"></div>
-                        <div id="fl" class="segment seg-l"></div>
-                    </div>
-                </div>
-            </td>
-        </tr>
-    </table>
 </div>
 
+<script src="jquery-3.6.0.min.js"></script>
 <script src="app-serie.js"></script>
+
 </body>
 </html>

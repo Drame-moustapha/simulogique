@@ -1,8 +1,9 @@
+
 class Display7Segments {
     constructor() {
         this.power = false; // false = OFF, true = ON
         this.value = null;
-
+        console.log("jQuery=", typeof $);
         // Table des segments pour 0–9
         this.decoder = {
             0: [1,1,1,1,1,1,0],
