@@ -2,27 +2,39 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <title>Simulogique - Panneau</title>
+    <title>Panneau - Gestion des Joueurs</title>
+
+    <!-- jQuery -->
     <script src="./jquery-3.6.0.min.js"></script>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div class="panel">
 
-    <h3>Gestion des Joueurs</h3>
+<div class="container">
+    <div class="panel">
 
-    <input type="text" id="playerName" placeholder="Nom joueur">
-    <button id="addPlayer">Ajouter</button>
+        <h2>🎮 Gestion des Joueurs</h2>
 
-    <button id="nextPlayer">Joueur Suivant</button>
+        <div class="form-group">
+            <input type="text" id="playerName" placeholder="Nom du joueur">
+            <button id="addPlayer">Ajouter</button>
+        </div>
 
-    <div class="display">
-        <p>Joueur actuel : <span id="current">Aucun</span></p>
-        <p>File d'attente :</p>
-        <ul id="queueList"></ul>
+        <button id="nextPlayer" class="next-btn">Joueur Suivant</button>
+
+        <div class="display">
+            <p>👤 Joueur actuel : <span id="current">Aucun</span></p>
+
+            <p>📋 File d'attente :</p>
+            <ul id="queueList"></ul>
+        </div>
+
     </div>
-
 </div>
+
 <script src="app.js"></script>
+
 </body>
 </html>

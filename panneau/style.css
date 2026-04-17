@@ -1,23 +1,87 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+}
+
+/* Centrage */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Carte principale */
 .panel {
-    width:300px;
-    margin:40px auto;
-    padding:20px;
-    background:#1e293b;
-    color:white;
-    border-radius:10px;
+    background: #1e293b;
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    width: 320px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Titre */
+.panel h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Input + bouton */
+.form-group {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
 }
 
 input {
-    width:100%;
-    margin-bottom:10px;
-    padding:5px;
+    flex: 1;
+    padding: 8px;
+    border-radius: 6px;
+    border: none;
+    outline: none;
 }
 
+/* Boutons */
 button {
-    width:100%;
-    margin-bottom:10px;
-    height:35px;
-    background:#334155;
-    color:white;
-    border:none;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #3b82f6;
+    color: white;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #2563eb;
+}
+
+/* Bouton suivant */
+.next-btn {
+    width: 100%;
+    margin-bottom: 15px;
+    background: #10b981;
+}
+
+.next-btn:hover {
+    background: #059669;
+}
+
+/* Affichage */
+.display {
+    background: #334155;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+/* Liste */
+ul {
+    padding-left: 20px;
+}
+
+li {
+    margin: 5px 0;
 }
